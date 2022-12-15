@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-    entry: "./src/bitmask.ts",
+    entry: "./src/index.ts",
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "build/js"),

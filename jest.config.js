@@ -1,5 +1,8 @@
 module.exports = {
-    roots: ["<rootDir>/src"],
+    roots: [
+        "<rootDir>/src",
+        "<rootDir>/src/linked-list"
+    ],
     preset: "ts-jest",
     testEnvironment: "node",
     collectCoverage: true,
@@ -13,9 +16,9 @@ module.exports = {
     coverageDirectory: ".tmp/coverage",
     coverageReporters: ["html", "json", "lcov", "text", "clover"],
     moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json"],
-    moduleNameMapper: {
-        "^file\-loader":"<rootDir>/src/__mocks__/fileMock.js",
-    },
+    // moduleNameMapper: {
+    //     "^file\-loader":"<rootDir>/src/__mocks__/fileMock.js",
+    // },
     transform: {
         "\\.ts$": "ts-jest",
     },
